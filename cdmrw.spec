@@ -7,7 +7,7 @@ Group:		Applications/System
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/axboe/tools/%{name}.c
 URL:		http://old.lwn.net/2002/0328/a/rainier.php3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-BuildRequires:	kernel-headers
+%{!?_without_dist_kernel:BuildRequires: kernel-headers}
 Requires:	kernel(cdmrw)
 
 %description
@@ -22,23 +22,10 @@ cp -f %{SOURCE0} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-
-cp -f %{_builddir}/cdmrw/%{name} $RPM_BUILD_ROOT%{_bindir}
+install -D %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%pre
-
-%preun
-
-%post
-
-%postun
-
-
 
 %files
 %defattr(644,root,root,755)
