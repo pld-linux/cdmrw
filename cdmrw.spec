@@ -1,4 +1,5 @@
 Summary:	CDMRW Utility
+Summary(pl):	Narzêdzie CDMRW
 Name:		cdmrw
 Version:	1
 Release:	1
@@ -7,11 +8,12 @@ Group:		Applications/System
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/axboe/tools/%{name}.c
 URL:		http://old.lwn.net/2002/0328/a/rainier.php3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-%{!?_without_dist_kernel:BuildRequires: kernel-headers}
-Requires:	kernel(cdmrw)
 
 %description
-Utility to manage mt rainier cd drives + media
+Utility to manage Mt Rainier CD drives + media.
+
+%description -l pl
+Narzêdzie do obs³ugi napêdów CD i no¶ników Mt Rainier.
 
 %prep
 %setup -q -T -c
