@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	ftp://ftp.kernel.org/pub/linux/kernel/people/axboe/tools/%{name}.c
+# Source0-md5:	b39ac7fc3b1c861a84165e80512dda01
 URL:		http://old.lwn.net/2002/0328/a/rainier.php3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
