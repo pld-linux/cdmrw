@@ -1,5 +1,5 @@
 Summary:	CDMRW Utility
-Summary(pl.UTF-8):   Narzędzie CDMRW
+Summary(pl.UTF-8):	Narzędzie CDMRW
 Name:		cdmrw
 Version:	1
 Release:	1
