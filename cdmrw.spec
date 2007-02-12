@@ -1,5 +1,5 @@
 Summary:	CDMRW Utility
-Summary(pl):	Narzêdzie CDMRW
+Summary(pl.UTF-8):   NarzÄ™dzie CDMRW
 Name:		cdmrw
 Version:	1
 Release:	1
@@ -13,8 +13,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Utility to manage Mt Rainier CD drives + media.
 
-%description -l pl
-Narzêdzie do obs³ugi napêdów CD i no¶ników Mt Rainier.
+%description -l pl.UTF-8
+NarzÄ™dzie do obsÅ‚ugi napÄ™dÃ³w CD i noÅ›nikÃ³w Mt Rainier.
 
 %prep
 %setup -q -T -c
